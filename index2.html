@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <p><a href="/index.html">Home</a></p>
+            <p><a href="/index2.html">Portfólio</a></p>
+        </nav>
+    </header>
+    <section>
+        <div class="card"><h1>Site Adélia</h1><a target="_blank" href="https://tubular-mochi-f761a4.netlify.app"><img id="moda1" src="/img/adelia.png" alt="adelia"></a></div>
+        <div class="card"><h1>Site Calculadora</h1><a target="_blank" href="https://spontaneous-biscochitos-cebd3c.netlify.app"><img id="moda2" src="/img/calculadora-js.png" alt="calculadora"></a></div>
+        <div class="card"><h1>Pergunte ao Sabio</h1><a target="_blank" href="https://pergunte-ao-sabio.netlify.app"><img id="moda3" src="/img/sabio.png" alt="sabio"></a></div>
+    </section>
+    <script type="text/javascript">
+        let modal1 = document.getElementById('modal1')
+        let modal2 = document.getElementById('modal2')
+        let modal3 = document.getElementById('modal3')
+        let moda1 =  document.getElementById('sim2')
+        let moda2 =  document.getElementById('moda2')
+        let moda3 =  document.getElementById('moda3')
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+        
+        moda1.onclick = function () {
+         modal1.style.display = "block";
+    }
+
+        span.onclick = function() {
+         modal1.style.display = "none";
+    }
+
+        window.onclick = function(event) {
+            if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+    </script>
+</body>
+</html>

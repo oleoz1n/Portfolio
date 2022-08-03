@@ -1,0 +1,122 @@
+body {
+    margin:0;
+    padding:0;
+    background-image: url(https://wallpaperaccess.com/full/2825704.gif);
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none; 
+    color: gold;
+    font: italic 3rem "Fira Sans", serif;
+}
+
+.square {
+    width: 1000px;
+    height: 700px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 16px 6px rgba(0,0,0,0.59);
+    background-color: rgba(0, 0, 0, 0.658);
+}
+
+.square p, h1 {
+    color:white;
+    border: 1px;
+}
+
+.square h1 {
+    font-size: 60px;
+}
+
+.square p {
+    font-size: 40px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.sendemail {
+      padding: 0.4em 4em;
+      border: none;
+      outline: none;
+      color: rgb(255, 255, 255);
+      background: #111;
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      font-size: 2rem;
+    }
+    
+    .sendemail:before {
+      content: "";
+      background: linear-gradient(
+        90deg,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8
+      );
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing-button-85 20s linear infinite;
+      transition: opacity 0.3s ease-in-out;
+      border-radius: 10px;
+    }
+    
+    @keyframes glowing-button-85 {
+      0% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 400% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+    }
+    
+    .sendemail:after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(70, 70, 70, 0.651);
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }
+
+    .contato {
+        padding-top: 2rem;
+    }
+    .labelemail {
+        color: white;
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
