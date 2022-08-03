@@ -24,11 +24,15 @@ section {
     justify-content: center;
     padding: 1.4rem;
     align-items: center;
-    height: 80vh;
+    min-height: 77.2vh;
 }
 .card img {
     height:140px;
     width: 300px;
+}
+
+.card h1 {
+    font-family: Monospace,	Courier New;
 }
 
 .card {
@@ -48,4 +52,21 @@ h1 {
     color:white;
     margin-top: 6px;
     margin-bottom: 1rem;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(79,79,79);
+background: linear-gradient(90deg, rgba(79,79,79,1) 0%, rgba(176,176,176,1) 30%, rgba(177, 177, 177, 0.774) 70%, rgba(70,70,70,1) 100%);
+}
+
+footer a {
+    font-family: cursive;
+    margin: 10px;
 }
